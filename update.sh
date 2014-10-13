@@ -15,6 +15,3 @@ curl http://localhost:8983/solr/resource/apispark.DashboardView/schema.xml --dat
 curl http://localhost:8983/solr/resource/apispark.DashboardView/stopwords.txt --data-binary @solr/stopwords.txt -H 'Content-type:text/xml; charset=utf-8'
 curl http://localhost:8983/solr/resource/apispark.DashboardView/synonyms.txt --data-binary @solr/synonyms.txt -H 'Content-type:text/xml; charset=utf-8'
 curl "http://localhost:8983/solr/admin/cores?action=CREATE&name=apispark.DashboardView"
-
-echo "users"
-$cassandra_home/bin/cqlsh -f other/user.txt

@@ -14,16 +14,28 @@ Add scripts for Cassandra and Solr
 * in the folder ```solr```
   * copy and paste files from the APISpark folder : ```modules\com.apispark.service.search\resources```
 
-Configure update.sh
+Configure update.sh and accounts.sh
 -------------
 
 * edit ```update.sh```
   * define the variable ```dse_home```, like ```/opt/dse```, without ```/bin```
+* edit ```accounts.sh```
+  * define the variable ```dse_home```, like ```/opt/dse```, without ```/bin```
 
 Run update.sh
 ---
+* stop APISpark from eclipse
 * execute ```./update.sh```
-* the content of the table ```Person``` is displayed to show users data.
+* start APISpark in eclipse
+* go to the signin page of APISpark, like :
+  * [http://gblondeau.com:8182/signin|http://gblondeau.com:8182/signin]
+* after authentication, execute ```account.sh``` :
+  * it displays the content of the table ```Person``` is displayed to show users data.
+* in the ```apispark-console``` project :
+  * edit ```userAccountsService.js```
+  * in ```basicAuthUsers```, define ```Thierry``` credentials :
+	* ```userkey``` : copy and paste the content of ```userToken``` of the ```Person``` table
+	* ```password``` : copy and paste the content of ```apiToken``` of the ```Person``` table
 
 Help if it not works
 ----
