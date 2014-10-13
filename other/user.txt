@@ -1,0 +1,4 @@
+
+use apispark;
+
+select email,"userToken","apiToken" from "Person";

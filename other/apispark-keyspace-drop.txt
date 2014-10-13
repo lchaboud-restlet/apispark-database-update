@@ -1,0 +1,4 @@
+
+use apispark;
+
+drop keyspace apispark;
