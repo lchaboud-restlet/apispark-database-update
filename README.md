@@ -36,8 +36,10 @@ Update database
   * in ```basicAuthUsers```, define ```Thierry``` credentials :
 	* ```userkey``` : copy and paste the content of ```userToken``` of the ```Person``` table
 	* ```password``` : copy and paste the content of ```apiToken``` of the ```Person``` table
-* go on the config page and choose the Thierry user.
-* go to the dashboard and you can create a new entity store
+* go on the config page : http://localhost:9000/config 
+  * choose ```Thierry```
+* go to the dashboard : http://localhost:9000/dashboard
+  * you can create a new entity store
 
 Help if it not works
 ----
