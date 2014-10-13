@@ -1,7 +1,7 @@
 Update Cassandra and Solr
 =========================
 
-Download ZIP of this project, add scripts for Cassandra and Solr, configure and execute ```update.sh```
+Download ZIP of this Github project, add scripts for Cassandra and Solr, configure and execute ```update.sh```
 
 Add scripts for Cassandra and Solr
 -------
