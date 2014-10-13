@@ -36,7 +36,7 @@ Update database
   * in ```basicAuthUsers```, define ```Thierry``` credentials :
 	* ```userkey``` : copy and paste the content of ```userToken``` of the ```Person``` table
 	* ```password``` : copy and paste the content of ```apiToken``` of the ```Person``` table
-* go on the config page : 
+* go to the config page : 
   * [http://localhost:9000/config](http://localhost:9000/config)
   * choose ```Thierry```
 * go to the dashboard : 
