@@ -21,3 +21,4 @@ Scripts
 Run
 ---
 * execute ```./update.sh```
+* the content of the table ```Person``` is displayed to show users data.
