@@ -1,20 +1,23 @@
 Update Cassandra and Solr
 =========================
 
-Cassandra
----------
+Configuration
+-------------
 
-* In the ```update.sh```
-  * define the variable ```cassandra_home```
+* edit ```update.sh```
+  * define the variable ```dse_home```, like ```/opt/dse```, without ```/bin```
 
-* In the folder ```cassandra```
+Scripts
+-------
+
+### Cassandra
+* in the folder ```cassandra```
   * copy files from the folder ```apispark\modules\com.apispark.model.cell\resources\cassandra```
 
-Solr
-----
-* In the folder ```solr```
+### Solr
+* in the folder ```solr```
   * copy files from the folder : ```apispark\modules\com.apispark.service.search\resources```
 
 Run
 ---
-* Run ```./update.sh```
+* execute ```./update.sh```
