@@ -22,7 +22,7 @@ Configure update.sh and accounts.sh
 * edit ```accounts.sh```
   * define the variable ```dse_home```, like ```/opt/dse```, without ```/bin```
 
-Run update.sh
+Update database
 ---
 * stop APISpark from eclipse
 * execute ```./update.sh```
