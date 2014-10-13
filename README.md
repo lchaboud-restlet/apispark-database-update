@@ -1,11 +1,7 @@
 Update Cassandra and Solr
 =========================
 
-Configuration
--------------
-
-* edit ```update.sh```
-  * define the variable ```dse_home```, like ```/opt/dse```, without ```/bin```
+Download ZIP of this project, add scripts for Cassandra and Solr, configure and execute ```update.sh```
 
 Scripts
 -------
@@ -17,6 +13,12 @@ Scripts
 ### Solr
 * in the folder ```solr```
   * copy and paste files from the APISpark folder : ```modules\com.apispark.service.search\resources```
+
+Configuration
+-------------
+
+* edit ```update.sh```
+  * define the variable ```dse_home```, like ```/opt/dse```, without ```/bin```
 
 Run
 ---
