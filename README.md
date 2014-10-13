@@ -3,7 +3,7 @@ Update Cassandra and Solr
 
 Download ZIP of this project, add scripts for Cassandra and Solr, configure and execute ```update.sh```
 
-Scripts
+Add scripts for Cassandra and Solr
 -------
 
 ### Cassandra
@@ -14,18 +14,18 @@ Scripts
 * in the folder ```solr```
   * copy and paste files from the APISpark folder : ```modules\com.apispark.service.search\resources```
 
-Configuration
+Configure update.sh
 -------------
 
 * edit ```update.sh```
   * define the variable ```dse_home```, like ```/opt/dse```, without ```/bin```
 
-Run
+Run update.sh
 ---
 * execute ```./update.sh```
 * the content of the table ```Person``` is displayed to show users data.
 
-Help
+Help if it not works
 ----
 
 For Solr, see [https://github.com/restlet/apispark/wiki/DSE-4.5-Migration|https://github.com/restlet/apispark/wiki/DSE-4.5-Migration]
