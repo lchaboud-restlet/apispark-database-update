@@ -12,11 +12,11 @@ Scripts
 
 ### Cassandra
 * in the folder ```cassandra```
-  * copy files from the folder ```apispark\modules\com.apispark.model.cell\resources\cassandra```
+  * copy and paste files from the APISpark folder : ```modules\com.apispark.model.cell\resources\cassandra```
 
 ### Solr
 * in the folder ```solr```
-  * copy files from the folder : ```apispark\modules\com.apispark.service.search\resources```
+  * copy and paste files from the APISpark folder : ```modules\com.apispark.service.search\resources```
 
 Run
 ---
