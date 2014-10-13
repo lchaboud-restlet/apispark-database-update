@@ -34,8 +34,8 @@ Update database
 * after authentication, execute ```account.sh``` :
   * it displays the content of the table ```Person``` is displayed to show users data.
 * in the ```apispark-console``` project :
-  * edit ```userAccountsService.js```
-  * in ```basicAuthUsers```, define ```Thierry``` credentials :
+  * edit your ```dev-config.yaml``` (if it does not exists, see ```README.md``` of ```apispark-console```)
+  * in ```user```, define credentials :
 	* ```userkey``` : copy and paste the content of ```userToken``` of the ```Person``` table
 	* ```password``` : copy and paste the content of ```apiToken``` of the ```Person``` table
 * go to the config page : 
