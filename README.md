@@ -1,5 +1,7 @@
-Update Cassandra and Solr
+Create or Update Cassandra and Solr
 =========================
+
+This script helps to create or update Cassandra and Solr.
 
 Download ZIP of this Github project, add scripts for Cassandra and Solr, configure and execute ```update.sh```
 
