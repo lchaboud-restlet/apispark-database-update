@@ -28,7 +28,7 @@ Run update.sh
 * execute ```./update.sh```
 * start APISpark in eclipse
 * go to the signin page of APISpark, like :
-  * [http://gblondeau.com:8182/signin|http://gblondeau.com:8182/signin]
+  * http://gblondeau.com:8182/signin
 * after authentication, execute ```account.sh``` :
   * it displays the content of the table ```Person``` is displayed to show users data.
 * in the ```apispark-console``` project :
