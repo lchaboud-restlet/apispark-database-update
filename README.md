@@ -31,15 +31,21 @@ Download ZIP of this Github project, add scripts for Cassandra and Solr, configu
 
 4. Define credentials in ```apispark-console```
 ---
-* in the ```apispark-console``` project :
-  * edit your ```dev-config.yaml``` (if it does not exists, see ```README.md``` of ```apispark-console```)
-  * in ```user```, define credentials :
+* at the root of the```apispark-console``` project :
+  * add ```dev-config.yaml``` :
 
 ```
-dev:
+dev: # config for the app served by 'grunt serve'
+  api_url: http://gblondeau.com:8182/api # your API server in local
+  docs_url: https://apispark.com/docs/tutorials/
   user:
+    firstName: John
+    email: john.doe@gmail.com
     userkey: fd63410c-69e3-47a2-b35b-7b1ca207ebc7
     password: b0658f8b-0805-4f8a-a1ed-3e98e88cd140
+local: # config for the app served by your local apispark
+  api_url: /api
+  docs_url: https://apispark.com/docs/tutorials/
 ```
 
 5. Start
