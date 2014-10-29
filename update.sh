@@ -11,11 +11,6 @@ $cassandra_home/bin/cqlsh -f cassandra/apispark-keyspace-data.txt
 $cassandra_home/bin/cqlsh -f cassandra/apispark-keyspace-authorizations.txt
 
 echo "update solr"
-#curl http://localhost:8983/solr/resource/apispark.DashboardView/solrconfig.xml --data-binary @solr/solrconfig.xml -H 'Content-type:text/xml; charset=utf-8'
-#curl http://localhost:8983/solr/resource/apispark.DashboardView/schema.xml --data-binary @solr/schema.xml -H 'Content-type:text/xml; charset=utf-8'
-#curl http://localhost:8983/solr/resource/apispark.DashboardView/stopwords.txt --data-binary @solr/stopwords.txt -H 'Content-type:text/xml; charset=utf-8'
-#curl http://localhost:8983/solr/resource/apispark.DashboardView/synonyms.txt --data-binary @solr/synonyms.txt -H 'Content-type:text/xml; charset=utf-8'
-#curl "http://localhost:8983/solr/admin/cores?action=CREATE&name=apispark.DashboardView"
 
 CORE=apispark.DashboardView
 SOLR_URL=http://localhost:8983/solr
@@ -50,14 +45,9 @@ curl $SOLR_AUTH "$SOLR_URL/admin/cores?action=CREATE&name=$CORE"
 # define user with :
 # -> apiToken / userkey : 'f0ba46b5-d928-4e19-8c4d-0fa047415'
 # -> userToken / password : 'a70ec5d3-d58b-44d5-9dd0-d59a52202'
-truncate "Person";
-truncate "PersonView";
-insert into "Person" ("id","email","firstName","formattedName","lastName","organization","signUpDate","username","stripeUserId", enabled, admin, "apiToken", "userToken", "billingPlan") values ('1','[mail]','[firstname]','[fullname]','[lastname]','1','2012-08-17','[login]', 'stripeUserId', true, false, 'f0ba46b5-d928-4e19-8c4d-0fa047415', 'a70ec5d3-d58b-44d5-9dd0-d59a52202', '4');
-insert into "PersonView" ("id","username","signUpDate") values('anonymous','1','2014-02-21');
-insert into "sequences" ("instance","prefix","tableName","sequence","reservation") values('local','0','Person',1,1000);
-insert into "sequences" ("instance","prefix","tableName","sequence","reservation") values('local','0','PersonView',1,1000);
+$cassandra_home/bin/cqlsh -f other/user-create.txt
 
 echo ""
 echo "Users : "
 echo ""
-$cassandra_home/bin/cqlsh -f other/user.txt
+$cassandra_home/bin/cqlsh -f other/user-select.txt
