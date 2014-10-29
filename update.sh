@@ -47,3 +47,17 @@ curl $SOLR_AUTH "$SOLR_URL/admin/cores?action=CREATE&name=$CORE"
 # use for update
 #curl $SOLR_AUTH "$SOLR_URL/admin/cores?action=RELOAD&core=$CORE"
 
+# define user with :
+# -> apiToken / userkey : 'f0ba46b5-d928-4e19-8c4d-0fa047415'
+# -> userToken / password : 'a70ec5d3-d58b-44d5-9dd0-d59a52202'
+truncate "Person";
+truncate "PersonView";
+insert into "Person" ("id","email","firstName","formattedName","lastName","organization","signUpDate","username","stripeUserId", enabled, admin, "apiToken", "userToken", "billingPlan") values ('1','[mail]','[firstname]','[fullname]','[lastname]','1','2012-08-17','[login]', 'stripeUserId', true, false, 'f0ba46b5-d928-4e19-8c4d-0fa047415', 'a70ec5d3-d58b-44d5-9dd0-d59a52202', '4');
+insert into "PersonView" ("id","username","signUpDate") values('anonymous','1','2014-02-21');
+insert into "sequences" ("instance","prefix","tableName","sequence","reservation") values('local','0','Person',1,1000);
+insert into "sequences" ("instance","prefix","tableName","sequence","reservation") values('local','0','PersonView',1,1000);
+
+echo ""
+echo "Users : "
+echo ""
+$cassandra_home/bin/cqlsh -f other/user.txt
