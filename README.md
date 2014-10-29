@@ -35,10 +35,12 @@ Download ZIP of this Github project, add scripts for Cassandra and Solr, configu
   * edit your ```dev-config.yaml``` (if it does not exists, see ```README.md``` of ```apispark-console```)
   * in ```user```, define credentials :
 
-  ```
-  userkey: fd63410c-69e3-47a2-b35b-7b1ca207ebc7
-  password: b0658f8b-0805-4f8a-a1ed-3e98e88cd140
-  ```
+```
+dev:
+  user:
+    userkey: fd63410c-69e3-47a2-b35b-7b1ca207ebc7
+    password: b0658f8b-0805-4f8a-a1ed-3e98e88cd140
+```
 
 5. Start
 ---
