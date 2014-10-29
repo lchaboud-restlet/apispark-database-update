@@ -42,9 +42,7 @@ curl $SOLR_AUTH "$SOLR_URL/admin/cores?action=CREATE&name=$CORE"
 # use for update
 #curl $SOLR_AUTH "$SOLR_URL/admin/cores?action=RELOAD&core=$CORE"
 
-# define user with :
-# -> apiToken / userkey : 'f0ba46b5-d928-4e19-8c4d-0fa047415'
-# -> userToken / password : 'a70ec5d3-d58b-44d5-9dd0-d59a52202'
+# create user
 $cassandra_home/bin/cqlsh -f other/user-create.txt
 
 echo ""

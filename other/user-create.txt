@@ -4,7 +4,7 @@ use apispark;
 truncate "Person";
 truncate "PersonView";
 
-insert into "Person" ("id","email","firstName","formattedName","lastName","organization","signUpDate","username","stripeUserId", enabled, admin, "apiToken", "userToken", "billingPlan") values ('1','[mail]','[firstname]','[fullname]','[lastname]','1','2012-08-17','[login]', 'stripeUserId', true, false, 'f0ba46b5-d928-4e19-8c4d-0fa047415', 'a70ec5d3-d58b-44d5-9dd0-d59a52202', '4');
+insert into "Person" ("id","email","firstName","formattedName","lastName","organization","signUpDate","username","stripeUserId", enabled, admin, "userToken", "apiToken", "billingPlan") values ('1','john.doe@gmail.com','John','John Doe','Doe','1','2012-08-17','john.doe', 'stripeUserId', true, false, 'fd63410c-69e3-47a2-b35b-7b1ca207ebc7', 'b0658f8b-0805-4f8a-a1ed-3e98e88cd140', '4');
 
 insert into "PersonView" ("id","username","signUpDate") values('anonymous','1','2014-02-21');
 

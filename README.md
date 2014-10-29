@@ -36,8 +36,8 @@ Download ZIP of this Github project, add scripts for Cassandra and Solr, configu
   * in ```user```, define credentials :
 
   ```
-  userkey: f0ba46b5-d928-4e19-8c4d-0fa047415
-  password: a70ec5d3-d58b-44d5-9dd0-d59a52202
+  userkey: fd63410c-69e3-47a2-b35b-7b1ca207ebc7
+  password: b0658f8b-0805-4f8a-a1ed-3e98e88cd140
   ```
 
 5. Start
